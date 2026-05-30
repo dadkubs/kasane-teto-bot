@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -5,16 +7,15 @@ import asyncio
 import yt_dlp
 import random
 import json
-import os
 from openai import AsyncOpenAI
 from collections import deque
 from datetime import datetime
 
 
-#  ВСТАВЬ СВОИ КЛЮЧИ СЮДА
+load_dotenv()
 
-TOKEN               = "ВАШ_DISCORD_ТОКЕН"
-DEEPSEEK_API_KEY    = "ВАШ_DEEPSEEK_КЛЮЧ"    # platform.deepseek.com
+TOKEN = os.getenv("DISCORD_TOKEN")
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")   # platform.deepseek.com
 
 
 PLAYLISTS_FILE = "playlists.json"
