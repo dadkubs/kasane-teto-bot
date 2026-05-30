@@ -4,126 +4,133 @@
 
 # 🎀 Kasane Teto Music Bot
 
-**Музыкальный Discord бот с AI-волнами в стиле Kasane Teto**
+**A full-featured Discord music bot with AI-powered vibes — in Kasane Teto style**
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python)
-![discord.py](https://img.shields.io/badge/discord.py-2.3+-5865F2?style=flat-square&logo=discord)
-![DeepSeek](https://img.shields.io/badge/AI-DeepSeek-orange?style=flat-square)
-![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python)](https://python.org)
+[![discord.py](https://img.shields.io/badge/discord.py-2.3+-5865F2?style=flat-square&logo=discord)](https://discordpy.readthedocs.io)
+[![DeepSeek AI](https://img.shields.io/badge/AI-DeepSeek-orange?style=flat-square)](https://platform.deepseek.com)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 
-*~Te-to-te-to~ ♪*
+*~~Te-to-te-to~~ ♪*
 
 </div>
 
 ---
 
-## ✨ Возможности
+## ✨ Features
 
-### 🎵 Музыка
-- Воспроизведение по названию или YouTube ссылке
-- Очередь треков с прогресс-баром и таймером
-- Кнопки управления прямо под сообщением (пауза, скип, стоп, loop, shuffle)
-- Режимы повтора: трек / вся очередь
-- Регулировка громкости
-- Сохранение и загрузка плейлистов
+### 🎵 Music Player
+- Play tracks by **name or YouTube URL** via `/play`
+- **Queue management** with progress bar and live timer
+- **Interactive control buttons** directly under the player message (pause, skip, stop, loop, shuffle)
+- **Loop modes**: single track / entire queue / off
+- **Volume control** per server
+- **Save & load playlists** — persistent across sessions
 
-### 🌊 AI Волна (DeepSeek)
-- **`/vibe`** — подбирает треки под твоё настроение
-- **`/vibe_track`** — строит волну похожих треков на основе текущего
-- **`/smartplaylist`** — создаёт и сохраняет плейлист по описанию
+### 🌊 AI Vibes (powered by DeepSeek)
+- **`/vibe`** — describe a mood, get a curated playlist instantly
+- **`/vibe_track`** — build a wave of similar tracks based on what's currently playing
+- **`/smartplaylist`** — generate and save a named AI playlist from any description
 
 ---
 
-## 🎮 Команды
+## 🎮 Commands
 
-### Музыка
-| Команда | Описание |
+### Music
+
+| Command | Description |
 |---|---|
-| `/play [запрос]` | Воспроизвести трек по названию или ссылке |
-| `/skip` | Пропустить текущий трек |
-| `/stop` | Остановить и выйти из канала |
-| `/pause` | Пауза / продолжить |
-| `/loop [режим]` | Повтор: выкл / трек / очередь |
-| `/shuffle` | Перемешать очередь |
-| `/queue` | Показать очередь треков |
-| `/nowplaying` | Текущий трек с прогресс-баром |
-| `/volume [0-100]` | Изменить громкость |
-| `/playlist_save [название]` | Сохранить очередь как плейлист |
-| `/playlist_load [название]` | Загрузить плейлист |
-| `/playlist_list` | Мои плейлисты |
+| `/play [query]` | Play a track by name or YouTube link |
+| `/skip` | Skip the current track |
+| `/stop` | Stop playback and disconnect |
+| `/pause` | Pause / resume |
+| `/loop [mode]` | Set loop: off / track / queue |
+| `/shuffle` | Shuffle the queue |
+| `/queue` | Show the current queue |
+| `/nowplaying` | Current track with progress bar |
+| `/volume [0-100]` | Adjust volume |
+| `/playlist_save [name]` | Save queue as a playlist |
+| `/playlist_load [name]` | Load a saved playlist |
+| `/playlist_list` | List your saved playlists |
 
-### 🌊 AI Волна
-| Команда | Описание |
+### 🌊 AI Vibes
+
+| Command | Description |
 |---|---|
-| `/vibe [настроение]` | Подобрать треки под описание и запустить |
-| `/vibe_track` | Волна похожих треков на основе текущего |
-| `/smartplaylist [название] [описание]` | Создать AI плейлист и сохранить |
+| `/vibe [mood]` | Generate a playlist from a mood description |
+| `/vibe_track` | Build a wave based on the current track |
+| `/smartplaylist [name] [description]` | Create and save an AI playlist |
 
-**Примеры:**
+**Examples:**
 ```
-/vibe грустный дождливый вечер дома
-/vibe энергия для тренировки
-/vibe ночная поездка в машине
+/vibe sad rainy evening at home
+/vibe energy for a workout
+/vibe late night drive
 /vibe_track
-/smartplaylist лоуфай описание: расслабленный лоуфай для учёбы
+/smartplaylist lofi description: relaxed lofi beats for studying
 ```
 
 ---
 
-## ⚙️ Установка
+## ⚙️ Installation
 
-### 1. Требования
+### 1. Requirements
+
 - Python 3.10+
 - FFmpeg
 
-**Установка FFmpeg:**
-- **Windows:** скачай с [ffmpeg.org](https://ffmpeg.org/download.html), добавь в PATH
+**Install FFmpeg:**
+- **Windows:** download from [ffmpeg.org](https://ffmpeg.org/download.html), add to PATH
 - **Linux:** `sudo apt install ffmpeg`
 - **macOS:** `brew install ffmpeg`
 
-### 2. Клонируй репозиторий
+### 2. Clone the repository
+
 ```bash
-git clone https://github.com/ТВО_ИМЯ/kasane-teto-bot.git
+git clone https://github.com/dadkubs/kasane-teto-bot.git
 cd kasane-teto-bot
 ```
 
-### 3. Установи зависимости
+### 3. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Настрой токены
+### 4. Configure environment
 
-Открой `bot.py` и вставь свои ключи:
-```python
-TOKEN            = "ВАШ_DISCORD_ТОКЕН"
-DEEPSEEK_API_KEY = "ВАШ_DEEPSEEK_КЛЮЧ"
+Create a `.env` file (or edit `bot.py` directly):
+
+```env
+DISCORD_TOKEN=your_discord_bot_token
+DEEPSEEK_API_KEY=your_deepseek_api_key
 ```
 
-**Где взять:**
-- Discord токен: [discord.com/developers](https://discord.com/developers/applications)
+**Where to get the keys:**
+- Discord token: [discord.com/developers](https://discord.com/developers/applications)
 - DeepSeek API: [platform.deepseek.com](https://platform.deepseek.com)
 
-### 5. Запусти бота
+### 5. Run the bot
+
 ```bash
 python bot.py
 ```
 
 ---
 
-## 🔧 Настройка Discord бота
+## 🔧 Discord Bot Setup
 
-1. Зайди на [discord.com/developers/applications](https://discord.com/developers/applications)
-2. **New Application** → дай название
-3. Слева → **Bot** → скопируй токен
-4. Включи **Privileged Gateway Intents**: ✅ Presence, ✅ Server Members, ✅ Message Content
-5. **OAuth2** → **URL Generator** → выбери `bot` + `applications.commands`
-6. Права: `Connect`, `Speak`, `Send Messages`, `Embed Links`, `View Channels`
-7. Скопируй ссылку и добавь бота на сервер
+1. Go to [discord.com/developers/applications](https://discord.com/developers/applications)
+2. Click **New Application** → give it a name
+3. Go to **Bot** tab → copy the token
+4. Enable **Privileged Gateway Intents**: ✅ Presence, ✅ Server Members, ✅ Message Content
+5. Go to **OAuth2 → URL Generator** → select `bot` + `applications.commands`
+6. Required permissions: `Connect`, `Speak`, `Send Messages`, `Embed Links`, `View Channels`
+7. Copy the generated URL and invite the bot to your server
 
 ---
 
-## 📦 Зависимости
+## 📦 Dependencies
 
 ```
 discord.py>=2.3.0
@@ -135,16 +142,41 @@ httpx>=0.25.0
 
 ---
 
-## 📄 Лицензия
+## 🏗️ Project Structure
 
-MIT License — используй свободно.
+```
+kasane-teto-bot/
+├── bot.py              # Main bot file (726 lines)
+├── requirements.txt    # Python dependencies
+├── playlists.json      # Auto-generated: saved user playlists
+└── README.md
+```
+
+**Key components in `bot.py`:**
+- `MusicView` — Discord UI button controller (pause/skip/loop/shuffle/stop)
+- `search_and_get_info()` — async yt-dlp wrapper
+- `play_next()` / `_play_next_coro()` — queue & loop engine
+- `deepseek_tracklist()` — AI track generation via DeepSeek API
+- Slash commands: `/play`, `/vibe`, `/smartplaylist` and more
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first.
+
+---
+
+## 📄 License
+
+MIT License — free to use and modify.
 
 ---
 
 <div align="center">
 
-Made with dadkub🎀 by Kasane Teto fans
+Made with 🎀 by [dadkubs](https://github.com/dadkubs)
 
-*~Te-to-te-to~ ♪*
+*~~Te-to-te-to~~ ♪*
 
 </div>
