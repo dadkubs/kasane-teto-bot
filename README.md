@@ -12,6 +12,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 
 *~~Te-to-te-to~~ ♪*
+![Bot Preview](screenshot.png)
 
 </div>
 
